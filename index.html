@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mansfield Corner Bakery</title>
+  <style>
+    :root { --accent: #907364; --ink: #36281f; --paper: #fdf8f3; }
+    * { box-sizing: border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family: Inter, "Segoe UI", sans-serif;
+      background-image: radial-gradient(rgba(0,0,0,0.025) 1px, transparent 1px); background-size: 8px 8px; }
+    .wrap { max-width: 940px; margin: 0 auto; padding: 30px 16px 56px; }
+    h1,h2 { font-family: Georgia, serif; font-weight: 500; }
+    .hero { padding: 50px 0 26px; }
+    .tag { color: var(--accent); }
+    .panel { background: rgba(255,255,255,.72); border:1px solid rgba(0,0,0,.08); border-radius:14px; padding:18px; margin-top:18px; }
+    .cols { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+    iframe { width:100%; height:230px; border:0; border-radius:10px; }
+    .cta { margin-top:24px; padding:16px; border:1px dashed var(--accent); border-radius:12px; }
+    @media (max-width:760px){ .cols { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <h1>Mansfield Corner Bakery</h1>
+      <p class="tag">Mansfield Corner Bakery serving local families and businesses with care</p>
+    </section>
+
+    <section class="panel">
+      <h2>About</h2>
+      <p>Mansfield Corner Bakery is a local bakery business focused on practical solutions, respectful service, and clear communication from first call to follow-up.</p>
+      <h2>Highlights</h2>
+      <ul><li>Reliable bakery support</li>
+<li>Transparent scheduling and communication</li>
+<li>Friendly local service with fast response</li></ul>
+    </section>
+
+    <section class="cols">
+      <article class="panel">
+        <h2>Location and Hours</h2>
+        <p><strong>Address:</strong> 212 N Main St, Mansfield, TX 76063</p>
+        <p><strong>Phone:</strong> (817) 555-0199</p>
+        <p><strong>Hours:</strong> Tue-Sun 6:30 AM-3:00 PM</p>
+        <p><strong>Reviews:</strong> 4.9 / 5 (127 ratings)</p>
+        <p><a href="https://maps.google.com/?q=Mansfield+Corner+Bakery">Directions on Google Maps</a></p>
+      </article>
+      <article class="panel">
+        <h2>Find Us</h2>
+        <iframe src="https://maps.google.com/maps?q=212%20N%20Main%20St%2C%20Mansfield%2C%20TX%2076063&t=&z=13&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+      </article>
+    </section>
+
+    <section class="panel">
+      <h2>Guest Notes</h2>
+      <p>Guests often mention warm service, consistent quality, and a comfortable atmosphere for everyday visits.</p>
+    </section>
+
+    <footer class="cta">
+      Questions or pickup details? Call (817) 555-0199.
+    </footer>
+  </main>
+</body>
+</html>
